@@ -1,0 +1,170 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fc;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Sub-Heading Section */
+.sub-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.count span {
+    font-size: 16px;
+    color: #0047ab;
+    font-weight: bold;
+}
+
+#create-employee .anchor {
+    text-decoration: none;
+    background-color: #0047ab;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#create-employee .anchor:hover {
+    background-color: #003b93;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #0047ab;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #003b93;
+}
+
+/* Employee Container */
+.emp-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.emp-container h1 {
+    text-align: center;
+    color: #0047ab;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.employee-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.employee-container thead {
+    background-color: #0047ab;
+    color: #ffffff;
+}
+
+.table-header {
+    text-align: left;
+    padding: 10px;
+}
+
+.employee-container tbody tr {
+    border-bottom: 1px solid #cccccc;
+}
+
+.employee-container tbody tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+.employee-container td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.employee-container img {
+    border-radius: 5px;
+}
+
+#actions a {
+    text-decoration: none;
+    color: #0047ab;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#actions a:hover {
+    color:white;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    color: #0047ab;
+    margin-top: 20px;
+}
+
+.no-results .anchor {
+    text-decoration: none;
+    color: #003b93;
+    font-weight: bold;
+}
+
+.no-results .anchor:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sub-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search-form {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .employee-container {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,247 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.navBar {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 98vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.list-items {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 10vw;
+    height: 5vh;
+    margin: 5px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease;
+}
+
+.anchor {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.anchor:hover{
+    color: blueviolet;
+}
+
+.list-items:hover {
+    cursor: pointer;
+    height: 6vh;
+    background-color: #f5f5f5;
+}
+
+.list-items:hover .anchor {
+    font-size: 18px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.logged-in, .logged-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .link-container {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .list-items {
+        width: 150px;
+        margin: 5px 0;
+    }
+
+    .user-container {
+        margin: 10px 0;
+    }
+
+    .icon-container {
+        margin: 10px 0;
+    }
+}
+
+.list-items.active {
+    background-color: #e8e8e8;
+}
+
+.logged-in .list-items:last-child .anchor {
+    color: #ff4444;
+}
+
+.logged-in .list-items:last-child:hover {
+    border-color: #ff4444;
+} */
+
+
+
+
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f9fc;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    background-color: #0047ab;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #003b93;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.icon-container {
+    flex-shrink: 0;
+}
+
+.icon-container .image-container {
+    width: 100px; /* Increase the size of the logo */
+    height: auto;
+}
+
+/* Links */
+.link-container, .user-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list-items {
+    margin: 0 15px;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.anchor:hover {
+    background-color: #003b93;
+    border-radius: 5px;
+}
+
+/* User Containers */
+.logged-in, .logged-out {
+    display: flex;
+}
+
+.logged-in .list-items:first-child .anchor {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1440px ;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link-container, .user-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-items {
+        margin: 10px 0;
+    }
+
+    .icon-container .image-container {
+        width: 80px; /* Adjust logo size for smaller screens */
+    }
+}
